@@ -1,0 +1,403 @@
+descriptor: Group
+trusted: false
+programType: PageComponentPrototypeProgram
+visibility: HIDDEN
+subscriptionPolicy: NOT_ALLOWED
+sortKey: 10000
+settings:
+  state: ACTIVE
+  componentType: vueComponent_v2
+  htmlTemplate: ''
+  previewHtmlTemplate: >
+    (function(){"use strict";try{if(typeof document<"u"){var
+    e=document.createElement("style");e.appendChild(document.createTextNode("._container_10quy_2{padding:1rem}._title_10quy_6{margin-top:0;font-size:1.5rem}._body_10quy_11{margin-bottom:1rem}._button_10quy_15,._button_10quy_15:hover,._button_10quy_15:focus,._button_10quy_15:visited,._button_10quy_15:active{padding:.6rem
+    1rem;border-radius:4px;background-color:#3273dc;border:none;color:#fff;font-size:1rem;cursor:pointer;outline:0}")),document.head.appendChild(e)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
+
+    (function(){"use strict";var ue=typeof
+    global=="object"&&global&&global.Object===Object&&global,vt=typeof
+    self=="object"&&self&&self.Object===Object&&self,_=ue||vt||Function("return
+    this")(),w=_.Symbol,ce=Object.prototype,jt=ce.hasOwnProperty,Tt=ce.toString,L=w?w.toStringTag:void
+    0;function $t(e){var t=jt.call(e,L),r=e[L];try{e[L]=void 0;var
+    n=!0}catch{}var a=Tt.call(e);return n&&(t?e[L]=r:delete e[L]),a}var
+    At=Object.prototype,Pt=At.toString;function Ot(e){return Pt.call(e)}var
+    St="[object Null]",Et="[object Undefined]",ge=w?w.toStringTag:void
+    0;function S(e){return e==null?e===void 0?Et:St:ge&&ge in
+    Object(e)?$t(e):Ot(e)}function E(e){return e!=null&&typeof e=="object"}var
+    It="[object Symbol]";function Ct(e){return typeof
+    e=="symbol"||E(e)&&S(e)==It}function Mt(e,t){for(var
+    r=-1,n=e==null?0:e.length,a=Array(n);++r<n;)a[r]=t(e[r],r,e);return a}var
+    V=Array.isArray,Dt=1/0,de=w?w.prototype:void 0,fe=de?de.toString:void
+    0;function pe(e){if(typeof e=="string")return e;if(V(e))return
+    Mt(e,pe)+"";if(Ct(e))return fe?fe.call(e):"";var t=e+"";return
+    t=="0"&&1/e==-Dt?"-0":t}function F(e){var t=typeof e;return
+    e!=null&&(t=="object"||t=="function")}var kt="[object
+    AsyncFunction]",Nt="[object Function]",Lt="[object
+    GeneratorFunction]",Ft="[object Proxy]";function _e(e){if(!F(e))return!1;var
+    t=S(e);return t==Nt||t==Lt||t==kt||t==Ft}var
+    Y=_["__core-js_shared__"],ye=function(){var
+    e=/[^.]+$/.exec(Y&&Y.keys&&Y.keys.IE_PROTO||"");return
+    e?"Symbol(src)_1."+e:""}();function Rt(e){return!!ye&&ye in e}var
+    Bt=Function.prototype,Ut=Bt.toString;function j(e){if(e!=null){try{return
+    Ut.call(e)}catch{}try{return e+""}catch{}}return""}var
+    xt=/[\\^$.*+?()[\]{}|]/g,Vt=/^\[object
+    .+?Constructor\]$/,Gt=Function.prototype,zt=Object.prototype,Wt=Gt.toString,Ht=zt.hasOwnProperty,qt=RegExp("^"+Wt.call(Ht).replace(xt,"\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()|
+    for .+?(?=\\\])/g,"$1.*?")+"$");function Kt(e){if(!F(e)||Rt(e))return!1;var
+    t=_e(e)?qt:Vt;return t.test(j(e))}function Yt(e,t){return e?.[t]}function
+    T(e,t){var r=Yt(e,t);return Kt(r)?r:void 0}var
+    Z=T(_,"WeakMap"),me=Object.create,Zt=function(){function e(){}return
+    function(t){if(!F(t))return{};if(me)return me(t);e.prototype=t;var r=new
+    e;return e.prototype=void 0,r}}();function Jt(e,t){var
+    r=-1,n=e.length;for(t||(t=Array(n));++r<n;)t[r]=e[r];return t}var
+    he=function(){try{var e=T(Object,"defineProperty");return
+    e({},"",{}),e}catch{}}();function Xt(e,t){for(var
+    r=-1,n=e==null?0:e.length;++r<n&&t(e[r],r,e)!==!1;);return e}var
+    Qt=9007199254740991,er=/^(?:0|[1-9]\d*)$/;function tr(e,t){var r=typeof
+    e;return
+    t=t??Qt,!!t&&(r=="number"||r!="symbol"&&er.test(e))&&e>-1&&e%1==0&&e<t}function
+    be(e,t,r){t=="__proto__"&&he?he(e,t,{configurable:!0,enumerable:!0,value:r,writable:!0}):e[t]=r}function
+    we(e,t){return e===t||e!==e&&t!==t}var
+    rr=Object.prototype,nr=rr.hasOwnProperty;function ve(e,t,r){var
+    n=e[t];(!(nr.call(e,t)&&we(n,r))||r===void 0&&!(t in e))&&be(e,t,r)}function
+    G(e,t,r,n){var a=!r;r||(r={});for(var o=-1,i=t.length;++o<i;){var
+    d=t[o],p=void 0;p===void 0&&(p=e[d]),a?be(r,d,p):ve(r,d,p)}return r}var
+    ar=9007199254740991;function je(e){return typeof
+    e=="number"&&e>-1&&e%1==0&&e<=ar}function Te(e){return
+    e!=null&&je(e.length)&&!_e(e)}var ir=Object.prototype;function J(e){var
+    t=e&&e.constructor,r=typeof t=="function"&&t.prototype||ir;return
+    e===r}function or(e,t){for(var r=-1,n=Array(e);++r<e;)n[r]=t(r);return n}var
+    sr="[object Arguments]";function $e(e){return E(e)&&S(e)==sr}var
+    Ae=Object.prototype,lr=Ae.hasOwnProperty,ur=Ae.propertyIsEnumerable,cr=$e(function(){return
+    arguments}())?$e:function(e){return
+    E(e)&&lr.call(e,"callee")&&!ur.call(e,"callee")};function gr(){return!1}var
+    Pe=typeof
+    exports=="object"&&exports&&!exports.nodeType&&exports,Oe=Pe&&typeof
+    module=="object"&&module&&!module.nodeType&&module,dr=Oe&&Oe.exports===Pe,Se=dr?_.Buffer:void
+    0,fr=Se?Se.isBuffer:void 0,Ee=fr||gr,pr="[object Arguments]",_r="[object
+    Array]",yr="[object Boolean]",mr="[object Date]",hr="[object
+    Error]",br="[object Function]",wr="[object Map]",vr="[object
+    Number]",jr="[object Object]",Tr="[object RegExp]",$r="[object
+    Set]",Ar="[object String]",Pr="[object WeakMap]",Or="[object
+    ArrayBuffer]",Sr="[object DataView]",Er="[object Float32Array]",Ir="[object
+    Float64Array]",Cr="[object Int8Array]",Mr="[object Int16Array]",Dr="[object
+    Int32Array]",kr="[object Uint8Array]",Nr="[object
+    Uint8ClampedArray]",Lr="[object Uint16Array]",Fr="[object
+    Uint32Array]",c={};c[Er]=c[Ir]=c[Cr]=c[Mr]=c[Dr]=c[kr]=c[Nr]=c[Lr]=c[Fr]=!0,c[pr]=c[_r]=c[Or]=c[yr]=c[Sr]=c[mr]=c[hr]=c[br]=c[wr]=c[vr]=c[jr]=c[Tr]=c[$r]=c[Ar]=c[Pr]=!1;function
+    Rr(e){return E(e)&&je(e.length)&&!!c[S(e)]}function X(e){return
+    function(t){return e(t)}}var Ie=typeof
+    exports=="object"&&exports&&!exports.nodeType&&exports,R=Ie&&typeof
+    module=="object"&&module&&!module.nodeType&&module,Br=R&&R.exports===Ie,Q=Br&&ue.process,I=function(){try{var
+    e=R&&R.require&&R.require("util").types;return
+    e||Q&&Q.binding&&Q.binding("util")}catch{}}(),Ce=I&&I.isTypedArray,Ur=Ce?X(Ce):Rr,xr=Object.prototype,Vr=xr.hasOwnProperty;function
+    Me(e,t){var
+    r=V(e),n=!r&&cr(e),a=!r&&!n&&Ee(e),o=!r&&!n&&!a&&Ur(e),i=r||n||a||o,d=i?or(e.length,String):[],p=d.length;for(var
+    s in
+    e)(t||Vr.call(e,s))&&!(i&&(s=="length"||a&&(s=="offset"||s=="parent")||o&&(s=="buffer"||s=="byteLength"||s=="byteOffset")||tr(s,p)))&&d.push(s);return
+    d}function De(e,t){return function(r){return e(t(r))}}var
+    Gr=De(Object.keys,Object),zr=Object.prototype,Wr=zr.hasOwnProperty;function
+    Hr(e){if(!J(e))return Gr(e);var t=[];for(var r in
+    Object(e))Wr.call(e,r)&&r!="constructor"&&t.push(r);return t}function
+    ee(e){return Te(e)?Me(e):Hr(e)}function qr(e){var t=[];if(e!=null)for(var r
+    in Object(e))t.push(r);return t}var
+    Kr=Object.prototype,Yr=Kr.hasOwnProperty;function Zr(e){if(!F(e))return
+    qr(e);var t=J(e),r=[];for(var n in
+    e)n=="constructor"&&(t||!Yr.call(e,n))||r.push(n);return r}function
+    te(e){return Te(e)?Me(e,!0):Zr(e)}var B=T(Object,"create");function
+    Jr(){this.__data__=B?B(null):{},this.size=0}function Xr(e){var
+    t=this.has(e)&&delete this.__data__[e];return this.size-=t?1:0,t}var
+    Qr="__lodash_hash_undefined__",en=Object.prototype,tn=en.hasOwnProperty;function
+    rn(e){var t=this.__data__;if(B){var r=t[e];return r===Qr?void 0:r}return
+    tn.call(t,e)?t[e]:void 0}var
+    nn=Object.prototype,an=nn.hasOwnProperty;function on(e){var
+    t=this.__data__;return B?t[e]!==void 0:an.call(t,e)}var
+    sn="__lodash_hash_undefined__";function ln(e,t){var r=this.__data__;return
+    this.size+=this.has(e)?0:1,r[e]=B&&t===void 0?sn:t,this}function $(e){var
+    t=-1,r=e==null?0:e.length;for(this.clear();++t<r;){var
+    n=e[t];this.set(n[0],n[1])}}$.prototype.clear=Jr,$.prototype.delete=Xr,$.prototype.get=rn,$.prototype.has=on,$.prototype.set=ln;function
+    un(){this.__data__=[],this.size=0}function z(e,t){for(var
+    r=e.length;r--;)if(we(e[r][0],t))return r;return-1}var
+    cn=Array.prototype,gn=cn.splice;function dn(e){var
+    t=this.__data__,r=z(t,e);if(r<0)return!1;var n=t.length-1;return
+    r==n?t.pop():gn.call(t,r,1),--this.size,!0}function fn(e){var
+    t=this.__data__,r=z(t,e);return r<0?void 0:t[r][1]}function pn(e){return
+    z(this.__data__,e)>-1}function _n(e,t){var r=this.__data__,n=z(r,e);return
+    n<0?(++this.size,r.push([e,t])):r[n][1]=t,this}function h(e){var
+    t=-1,r=e==null?0:e.length;for(this.clear();++t<r;){var
+    n=e[t];this.set(n[0],n[1])}}h.prototype.clear=un,h.prototype.delete=dn,h.prototype.get=fn,h.prototype.has=pn,h.prototype.set=_n;var
+    U=T(_,"Map");function yn(){this.size=0,this.__data__={hash:new
+    $,map:new(U||h),string:new $}}function mn(e){var t=typeof e;return
+    t=="string"||t=="number"||t=="symbol"||t=="boolean"?e!=="__proto__":e===null}function
+    W(e,t){var r=e.__data__;return mn(t)?r[typeof
+    t=="string"?"string":"hash"]:r.map}function hn(e){var
+    t=W(this,e).delete(e);return this.size-=t?1:0,t}function bn(e){return
+    W(this,e).get(e)}function wn(e){return W(this,e).has(e)}function vn(e,t){var
+    r=W(this,e),n=r.size;return
+    r.set(e,t),this.size+=r.size==n?0:1,this}function C(e){var
+    t=-1,r=e==null?0:e.length;for(this.clear();++t<r;){var
+    n=e[t];this.set(n[0],n[1])}}C.prototype.clear=yn,C.prototype.delete=hn,C.prototype.get=bn,C.prototype.has=wn,C.prototype.set=vn;function
+    jn(e){return e==null?"":pe(e)}function ke(e,t){for(var
+    r=-1,n=t.length,a=e.length;++r<n;)e[a+r]=t[r];return e}var
+    Ne=De(Object.getPrototypeOf,Object);function Tn(){this.__data__=new
+    h,this.size=0}function $n(e){var t=this.__data__,r=t.delete(e);return
+    this.size=t.size,r}function An(e){return this.__data__.get(e)}function
+    Pn(e){return this.__data__.has(e)}var On=200;function Sn(e,t){var
+    r=this.__data__;if(r instanceof h){var
+    n=r.__data__;if(!U||n.length<On-1)return
+    n.push([e,t]),this.size=++r.size,this;r=this.__data__=new C(n)}return
+    r.set(e,t),this.size=r.size,this}function M(e){var t=this.__data__=new
+    h(e);this.size=t.size}M.prototype.clear=Tn,M.prototype.delete=$n,M.prototype.get=An,M.prototype.has=Pn,M.prototype.set=Sn;function
+    En(e,t){return e&&G(t,ee(t),e)}function In(e,t){return e&&G(t,te(t),e)}var
+    Le=typeof
+    exports=="object"&&exports&&!exports.nodeType&&exports,Fe=Le&&typeof
+    module=="object"&&module&&!module.nodeType&&module,Cn=Fe&&Fe.exports===Le,Re=Cn?_.Buffer:void
+    0,Be=Re?Re.allocUnsafe:void 0;function Mn(e,t){if(t)return e.slice();var
+    r=e.length,n=Be?Be(r):new e.constructor(r);return e.copy(n),n}function
+    Dn(e,t){for(var r=-1,n=e==null?0:e.length,a=0,o=[];++r<n;){var
+    i=e[r];t(i,r,e)&&(o[a++]=i)}return o}function Ue(){return[]}var
+    kn=Object.prototype,Nn=kn.propertyIsEnumerable,xe=Object.getOwnPropertySymbols,re=xe?function(e){return
+    e==null?[]:(e=Object(e),Dn(xe(e),function(t){return
+    Nn.call(e,t)}))}:Ue;function Ln(e,t){return G(e,re(e),t)}var
+    Fn=Object.getOwnPropertySymbols,Ve=Fn?function(e){for(var
+    t=[];e;)ke(t,re(e)),e=Ne(e);return t}:Ue;function Rn(e,t){return
+    G(e,Ve(e),t)}function Ge(e,t,r){var n=t(e);return V(e)?n:ke(n,r(e))}function
+    Bn(e){return Ge(e,ee,re)}function Un(e){return Ge(e,te,Ve)}var
+    ne=T(_,"DataView"),ae=T(_,"Promise"),ie=T(_,"Set"),ze="[object
+    Map]",xn="[object Object]",We="[object Promise]",He="[object
+    Set]",qe="[object WeakMap]",Ke="[object
+    DataView]",Vn=j(ne),Gn=j(U),zn=j(ae),Wn=j(ie),Hn=j(Z),b=S;(ne&&b(new ne(new
+    ArrayBuffer(1)))!=Ke||U&&b(new U)!=ze||ae&&b(ae.resolve())!=We||ie&&b(new
+    ie)!=He||Z&&b(new Z)!=qe)&&(b=function(e){var
+    t=S(e),r=t==xn?e.constructor:void 0,n=r?j(r):"";if(n)switch(n){case
+    Vn:return Ke;case Gn:return ze;case zn:return We;case Wn:return He;case
+    Hn:return qe}return t});var
+    qn=Object.prototype,Kn=qn.hasOwnProperty;function Yn(e){var t=e.length,r=new
+    e.constructor(t);return t&&typeof
+    e[0]=="string"&&Kn.call(e,"index")&&(r.index=e.index,r.input=e.input),r}var
+    Ye=_.Uint8Array;function oe(e){var t=new e.constructor(e.byteLength);return
+    new Ye(t).set(new Ye(e)),t}function Zn(e,t){var
+    r=t?oe(e.buffer):e.buffer;return new
+    e.constructor(r,e.byteOffset,e.byteLength)}var Jn=/\w*$/;function Xn(e){var
+    t=new e.constructor(e.source,Jn.exec(e));return
+    t.lastIndex=e.lastIndex,t}var Ze=w?w.prototype:void 0,Je=Ze?Ze.valueOf:void
+    0;function Qn(e){return Je?Object(Je.call(e)):{}}function ea(e,t){var
+    r=t?oe(e.buffer):e.buffer;return new
+    e.constructor(r,e.byteOffset,e.length)}var ta="[object Boolean]",ra="[object
+    Date]",na="[object Map]",aa="[object Number]",ia="[object
+    RegExp]",oa="[object Set]",sa="[object String]",la="[object
+    Symbol]",ua="[object ArrayBuffer]",ca="[object DataView]",ga="[object
+    Float32Array]",da="[object Float64Array]",fa="[object
+    Int8Array]",pa="[object Int16Array]",_a="[object Int32Array]",ya="[object
+    Uint8Array]",ma="[object Uint8ClampedArray]",ha="[object
+    Uint16Array]",ba="[object Uint32Array]";function wa(e,t,r){var
+    n=e.constructor;switch(t){case ua:return oe(e);case ta:case ra:return new
+    n(+e);case ca:return Zn(e,r);case ga:case da:case fa:case pa:case _a:case
+    ya:case ma:case ha:case ba:return ea(e,r);case na:return new n;case aa:case
+    sa:return new n(e);case ia:return Xn(e);case oa:return new n;case la:return
+    Qn(e)}}function va(e){return typeof
+    e.constructor=="function"&&!J(e)?Zt(Ne(e)):{}}var ja="[object Map]";function
+    Ta(e){return E(e)&&b(e)==ja}var Xe=I&&I.isMap,$a=Xe?X(Xe):Ta,Aa="[object
+    Set]";function Pa(e){return E(e)&&b(e)==Aa}var
+    Qe=I&&I.isSet,Oa=Qe?X(Qe):Pa,Sa=1,Ea=2,Ia=4,et="[object
+    Arguments]",Ca="[object Array]",Ma="[object Boolean]",Da="[object
+    Date]",ka="[object Error]",tt="[object Function]",Na="[object
+    GeneratorFunction]",La="[object Map]",Fa="[object Number]",rt="[object
+    Object]",Ra="[object RegExp]",Ba="[object Set]",Ua="[object
+    String]",xa="[object Symbol]",Va="[object WeakMap]",Ga="[object
+    ArrayBuffer]",za="[object DataView]",Wa="[object Float32Array]",Ha="[object
+    Float64Array]",qa="[object Int8Array]",Ka="[object Int16Array]",Ya="[object
+    Int32Array]",Za="[object Uint8Array]",Ja="[object
+    Uint8ClampedArray]",Xa="[object Uint16Array]",Qa="[object
+    Uint32Array]",l={};l[et]=l[Ca]=l[Ga]=l[za]=l[Ma]=l[Da]=l[Wa]=l[Ha]=l[qa]=l[Ka]=l[Ya]=l[La]=l[Fa]=l[rt]=l[Ra]=l[Ba]=l[Ua]=l[xa]=l[Za]=l[Ja]=l[Xa]=l[Qa]=!0,l[ka]=l[tt]=l[Va]=!1;function
+    H(e,t,r,n,a,o){var i,d=t&Sa,p=t&Ea,s=t&Ia;if(i!==void 0)return
+    i;if(!F(e))return e;var A=V(e);if(A){if(i=Yn(e),!d)return Jt(e,i)}else{var
+    P=b(e),ht=P==tt||P==Na;if(Ee(e))return
+    Mn(e,d);if(P==rt||P==et||ht&&!a){if(i=p||ht?{}:va(e),!d)return
+    p?Rn(e,In(i,e)):Ln(e,En(i,e))}else{if(!l[P])return
+    a?e:{};i=wa(e,P,d)}}o||(o=new M);var bt=o.get(e);if(bt)return
+    bt;o.set(e,i),Oa(e)?e.forEach(function(v){i.add(H(v,t,r,v,e,o))}):$a(e)&&e.forEach(function(v,O){i.set(O,H(v,t,r,O,e,o))});var
+    Ki=s?p?Un:Bn:p?te:ee,wt=A?void 0:Ki(e);return
+    Xt(wt||e,function(v,O){wt&&(O=v,v=e[O]),ve(i,O,H(v,t,r,O,e,o))}),i}var
+    ei=1,ti=4;function se(e){return H(e,ei|ti)}var ri=0;function nt(e){var
+    t=++ri;return jn(e)+t}function ni(e,t,r,n){const a={},o=[];for(var i in
+    r){o.push(i);const
+    s=se(r[i].defaultData);s.$loading=!1,s.$default=!0,s.$error=!1,s.$age=void
+    0,a[i]=s}const d=()=>{let
+    s=!1;o.forEach(A=>{s||(s=a[A].$loading)}),a.$loading=s},p=(s,A,P)=>{if(!s||!a[s]||!A){console.error("simulateDataSourceFetch:
+    Invalid
+    arguments!");return}a[s].$loading=!0,a.$loading=!0,d(),setTimeout(()=>{a[s]=se(r[s].data),Object.assign(a[s],{$loading:!1,$default:!1,$error:!1,$age:0}),d(),console.log(`Data
+    source ${s} fetch simulated`),console.log("Updating preview component with
+    data source
+    simulation"),window.PREVIEW_WELLMO_COMPONENT.updateProps(e)},A)};o.forEach(s=>p(s,1e3)),e[t]=a}const
+    at={exercise_gaming:[2.3,3.8,7.2],aerobics:[5,5.6,7.3],agility:[4,5.4,7],archery:[3.1,4.3,5.6],arm_ergometer:[2,2.8,3.6],ashtanga_yoga:[2.9,4,5.2],backpacking:[5,7,9.1],badminton:[3.9,5.5,7.2],ballet_dancing:[3.6,5,6.8],ballroom_dancing:[3,4.2,5.5],base_jumping:[2.5,3.5,4.6],baseball:[3.6,5,6.5],basketball:[4.6,6.5,8.5],cycling:[4,8,10],bmx_biking:[6.1,8.5,11.1],indoor_cycling:[3.5,6.8,8.8],bikram_yoga:[5,7,9.1],body_pump:[4.4,6.2,8],boot_camp_training:[3.6,5,6.5],bowling:[2.7,3.8,4.9],boxing_punching_bag:[3.9,5.5,7.2],broomball:[5,7,9.1],bungee_jumping:[2.5,3.5,4.6],bodyweight_calisthenics:[2.8,3.8,8],canoeing_rowing:[2.8,5.8,7.5],childrens_games:[4.1,5.8,7.5],chopping_wood:[3.2,4.5,6.3],circuit_training:[3.1,4.3,8],cleaning_sweeping:[2.3,3.8,4.9],cricket:[3.4,4.8,6.2],croquet:[2.4,3.3,4.3],cross_country_skiing:[6.8,9,12.5],curling:[2.9,4,5.2],scuba_diving:[5,7,9.1],downhill_skiing:[3.8,5.3,6.9],drag_racing:[4.3,6,7.8],elliptical_training:[3.6,5,6.5],fencing:[4.3,6,7.8],field_hockey:[5.6,7.8,10.1],exercise_ball:[2,2.8,3.6],floorball:[4,6,8],football_touch_flag:[5.7,8,10.4],frisbee_playing:[2.1,3,3.9],gardening:[2.7,3.8,4.9],golf:[3.4,4.8,6.2],gymnastics:[2.7,3.8,4.9],handball:[5.7,8,10.4],hang_gliding:[2.5,3.5,4.6],hatha_yoga:[1.8,2.5,3.3],health_club_classes:[5.6,7.8,10.1],health_club_exercise:[3.9,5.5,7.2],hiking:[4.3,6,7.8],home_exercise:[2.7,3.8,4.9],home_repair:[2.5,4.5,6],horseback_riding:[3.9,5.5,7.2],household_tasks:[2.8,3.5,4.3],hunting:[3.6,5,6.5],ice_hockey:[5.7,8,10.4],ice_skating:[5,7,9.1],jai_alai:[8.6,12,15.6],jazz_dancing:[3.6,5,6.8],jet_skiing:[2.9,4,5.2],jogging:[5,7,9.1],judo:[7.4,10.3,13.4],juggling:[2.9,4,5.2],jujitsu:[7.4,10.3,13.4],karate:[7.4,10.3,13.4],kart_racing:[4.3,6,7.8],kettlebell:[6.4,9,11.7],kick_boxing:[7.4,10.3,13.4],kickball:[5,7,9.1],lacrosse:[5.7,8,10.4],martial_arts_:[7.4,10.3,13.4],modern_dancing:[3.6,5,6.8],motocross:[2.9,4,5.2],motorcycling:[2.5,3.5,4.6],mowing_lawn:[3.9,5.5,7.2],nordic_walking:[3.4,4.8,9.5],orienteering:[6.4,9,11.7],paddle_boating:[2.9,4,5.2],paddleball:[4.3,6,7.8],parkour:[5.5,7.7,10],picking_fruit:[2.5,3.5,4.5],pilates:[2.1,3,3.9],polo:[5.7,8,10.4],power_yoga:[2.9,4,5.2],powerboating:[1.8,2.5,3.3],racquetball:[5,7,9.1],raking:[2.7,3.8,4.9],rally:[4.3,6,7.8],gym_weight_lifting:[3.5,5,6],rock_mountain_climbing:[5.7,8,10.4],rodeo_sports:[4,5.5,7],rollerblading:[7.5,9.8,12.3],roller_skating:[5,7,9.1],rope_jumping:[8.8,11.8,12.3],rowing_stationary:[3.4,4.8,6],rugby:[4.5,6.3,8.2],running:[5.7,8,10.4],sailing:[2.1,3,3.9],shovelling_dirt:[3.9,5.5,7.2],shovelling_snow:[3.8,5.3,7.5],skateboarding:[3.6,5,6],ski_machine:[4.9,6.8,8.8],sky_diving:[2.5,3.5,4.6],sledding:[5,7,9.1],slide_board_exercise:[7.9,11,14.3],slimnastics_jazzercise:[4.3,6,7.8],snorkelling:[3.6,5,6.5],snow_shoeing:[3.8,5.3,10],snowboarding:[4.3,5.3,6.9],snowmobiling:[2.5,3.5,4.6],soccer:[5,7,9.1],softball:[3.6,5,6.5],spinning:[6.1,8.5,11.1],squash:[5.2,7.3,9.5],stair_climbing:[4,6.8,8.8],stairmaster:[6.4,9,11.7],step_aerobic:[6.1,8.5,11.1],stretching:[2.3,3.2,4.2],surfing:[2.1,3,3.9],swimming:[4.3,6,7.8],taekwondo:[7.4,10.3,13.4],tai_chi_qigong:[2.1,3,3.9],tap_dancing:[3.4,4.8,6.2],tennis:[5.2,7.3,9.5],athletics:[4.3,6,7.8],trampoline:[3.5,4.9,6.4],ultimate_frisbee:[5.7,8,10.4],vacuuming:[2.4,3.3,4.3],walking:[3,4.3,5],cross_country_running:[6.4,9,11.7],water_aerobics:[3.8,5.3,6.9],water_jogging:[7,9.8,12.7],water_polo:[7.1,10,13],water_skiing:[4.3,6,7.8],water_walking:[2.5,4.5,6.8],water_volleyball:[2.1,3,3.9],tv_exercise:[2.3,4,6],volleyball:[2.9,4,5.2],volleyball_beach:[5.7,8,10.4],wrestling:[4.3,6,7.8],yard_work:[3,4,6],zumba:[5.6,7.8,10.1],mountain_biking:[6.1,8.5,11.1],ethnic_dancing:[3.2,4.5,5.9],fishing:[2.5,3.5,4.6],cooking:[2,3.5,4.6],playing_with_children:[2.2,3.5,5.8],playing_with_animals:[2.5,4,5],car_repair:[2.4,3.3,4.3],carpentry:[2.3,4,5.2],painting:[3.2,4.5,5.9],weeding:[3.2,4.5,5.9],footbag:[2.9,4,5.2],table_tennis:[2.9,4,5.2],kayaking:[3.6,5,6.5],windsurfing_kitesurfing:[5,8.5,11],whitewater_rafting:[3.6,5,6.5],ski_jumping:[5,7,9.1],roller_skiing:[6.9,9.6,12.5],cross_country_skiing_skating:[7.3,10.2,13.3],dog_sledding:[5.4,7.5,9.8],synchronized_swimming:[5.7,8,10.4],diabolo:[3.6,5,6.5],ice_sailing:[2.1,3,3.9],rink_bandy:[5.7,8,10.4],picking_berries_mushrooms:[3.6,5,6.5],miniature_golf:[2.1,3,3.9],boules:[2.4,3.3,4.3],kick_sledding:[5,7,9],rappelling:[3.6,5,6.5],kick_scooter:[2.9,4,5.2],ringette:[7,8,9],triathlon:[6.6,9.2,12],equestrian_vaulting:[2.9,4,5.2],free_diving:[8.4,11.8,15.8],airsoft_paintball:[5.4,7.5,9.8],cross_training:[5,7,9.4],moving_home_roadie_work:[4,6,8],geocaching:[6.4,9,11.7],core_training:[2.1,3,3.9],billiards:[2,2.5,3],darts:[2,2.5,3],crossfit:[5.5,9.5,15],meditation:[1,1.1,1.2],springboard_diving:[2.5,3,3.5],dancing:[3.4,4.9,6.3],bandy:[5.7,8,10.4],generic:[2.5,5.5,7.7]};let
+    u={},D=[];const
+    ai={none:"days",daily:"days",weekly:"weeks",monthly:"months"},g={steps:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{walkingAsMeters:"m",runningAsMeters:"m"}},sleep:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{sleep:"min"}},exercise:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{energy:"kcal",duration:"min"},options:{exerciseTypes:{}}},weight:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{weight:"kg"}},waist:{samples:{raw:[],daily:[]},units:{waist:"cm"}},stress:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}},mood:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}},meals:{samples:{raw:[],daily:[],weekly:[]},units:{}},alcohol:{samples:{raw:[],daily:[],weekly:[]},units:{}},smoking:{samples:{raw:[],daily:[]},units:{}},pain:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}},bloodglucose:{samples:{raw:[]},units:{bloodglucose:"mmol/L"}},bloodpressure:{samples:{raw:[],daily:[]},units:{systolic:"mmHg",diastolic:"mmHg"}},sanvartis_bowel_movements:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}},sanvartis_condition:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}},sanvartis_fatigue:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}},sanvartis_joint_pain:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}},sanvartis_morning_stiffness:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}},sanvartis_pain:{samples:{raw:[],daily:[],weekly:[],monthly:[]},units:{}}};for(let
+    e in g)Object.assign(g[e],{target:void 0,$loading:!1,reminders:[]});const
+    q={};Object.keys(g).forEach(e=>{q[e]={raw:{start:void 0,end:void
+    0},daily:{start:void 0,end:void 0},weekly:{start:void 0,end:void
+    0},monthly:{start:void 0,end:void 0}}});const
+    ii=()=>{Object.keys(g).forEach(r=>{u[r]&&u[r].units&&Object.assign(g[r].units,u[r].units)});let
+    e=1;g.exercise.units.energy==="kJ"&&(e=e*4.184),g.weight.units.weight==="lb"&&(e=e/2.2046226218487757);let
+    t={};for(let r in at){const
+    n=at[r];t[r]=[n[0]*e,n[1]*e,n[2]*e]}Object.assign(g.exercise.options.exerciseTypes,t)},oi=(e,t)=>{if(!t.aggregation)return"Mandatory
+    option field 'aggregation' missing";if(!t.start)return"Mandatory option
+    field 'start' missing";if(isNaN(t.start.getTime()))return"Invalid 'start'
+    date";if(!t.end)return"Mandatory option field 'end'
+    missing";if(isNaN(t.end.getTime()))return"Invalid 'end'
+    date";if(moment(t.end).isBefore(moment(t.start)))return"Invalid date
+    range";if(k(e))return"Invalid tracker";const
+    r=t.aggregation==="none"?"raw":t.aggregation;if(!g[e].samples[r])return`${t.aggregation}
+    aggregation is not supported for ${e}
+    tracker`},k=e=>!e||!g[e],it=(e,t)=>{const
+    r=moment(e.date),n=moment(t.date);return
+    r.isBefore(n)?-1:r.isAfter(n)?1:0},si=(e,t)=>{const
+    r=moment(t.start),n=moment(t.end);let
+    a=e.filter(o=>o.date&&o.data).filter(o=>{const i=moment(o.date);return
+    i.isSameOrAfter(r,"day")&&i.isSameOrBefore(n,"day")});return
+    t.aggregation!=="raw"&&(a=a.map(o=>({date:moment(o.date).startOf(ai[t.aggregation]).toDate(),data:o.data}))),a.sort(it),a},li=(e,t,r,n)=>{const
+    a=q[e][t],o=moment(r),i=moment(n);(!a.start||a.start.isAfter(o))&&(a.start=o),(!a.end||a.end.isBefore(i))&&(a.end=i)},ui=(e,t)=>u[e]&&u[e].samples[t]?u[e].samples[t]:[],ot=(e,t)=>{t.active!==void
+    0&&(e.active=t.active),t.data&&Object.assign(e.data,t.data)},st=(e,t)=>{let
+    r=oi(e,t);if(r)return console.error(r),Promise.reject(r);let
+    n=t.aggregation==="none"?"raw":t.aggregation;li(e,n,t.start,t.end);const
+    a=q[e][n];return g[e].$loading=!0,new
+    Promise(o=>{setTimeout(()=>{g[e].samples[n]=si(ui(e,n),{start:a.start,end:a.end,aggregation:n}),g[e].$loading=!1,o(),window.PREVIEW_WELLMO_COMPONENT.updateProps(context)},500)})},lt=(e,t)=>{const
+    r=q[e][t];r.start&&r.end&&st(e,{aggregation:"raw",start:r.start.toDate(),end:r.end.toDate()})},le=e=>se(D.filter(t=>t.trackerId===e)),ut={ensureData:st,createData(e,t){return
+    alert("NOTE: Mock implementation of createData does not update aggregated
+    data"),k(e)?Promise.reject("Invalid
+    tracker"):(u[e]||(u[e]={}),u[e].samples||(u[e].samples={}),u[e].samples.raw||(u[e].samples.raw=[]),u[e].samples.raw.push({date:t.date,data:t.data,manual:!0,id:nt("test-data-point-")}),u[e].samples.raw.sort(it),lt(e,"raw"),Promise.resolve())},deleteData(e,t){if(alert("NOTE:
+    Mock implementation of deleteData does not update aggregated
+    data"),!(u[e]&&u[e].samples&&u[e].samples.raw))return
+    Promise.resolve(!1);const r=u[e].samples.raw.filter(n=>n.id!==t);return
+    r.length!==u[e].samples.raw.length?(u[e].samples.raw=r,lt(e,"raw"),Promise.resolve(!0)):Promise.resolve(!1)},ensureTarget(e){return
+    k(e)?Promise.reject("Invalid
+    tracker"):g[e].target?Promise.resolve():u[e]&&u[e].target?(g[e].target=u[e].target,Promise.resolve()):(console.error(`No
+    target defined for ${e} tracker in mock data`),alert(`No target defined for
+    ${e} tracker in mock data`),Promise.resolve())},setTarget(e,t){return
+    k(e)?Promise.reject("Invalid
+    tracker"):(u[e]&&ot(u[e].target,t),g[e].target&&ot(g[e].target,t),Promise.resolve())},ensureReminders(e){return
+    k(e)?Promise.reject("Invalid tracker"):(g[e].$loading=!0,new
+    Promise(t=>{setTimeout(()=>{g[e].reminders=le(e),g[e].$loading=!1,t()},500)}))},createReminder(e,t){return
+    k(e)?Promise.reject("Invalid
+    tracker"):e&&t.time&&t.weekDay?(t.id=nt("test-reminder-"),t.trackerId=e,D.push(t),g[e].reminders=le(e),Promise.resolve()):Promise.reject("Invalid
+    reminder")},deleteReminder(e){const t=D.find(n=>n.id===e);return
+    t?(D=D.filter(n=>n.id!==e),g[t.trackerId].reminders=le(t.trackerId),Promise.resolve(!0)):Promise.resolve(!1)}};function
+    ci(e,t,r,n){u={},D=[],ii(),e[t]||(e[t]={}),e[t].data||(e[t].data={}),e[t].data.tracker=g,e[t].api||(e[t].api={}),e[t].api.tracker=ut,e[t].api_v1||(e[t].api_v1={}),e[t].api_v1.tracker=ut}let
+    ct={};const gt=(e,t)=>{let r=ct[e]||e;return
+    t&&Object.keys(t).forEach(n=>{const a=new
+    RegExp("{{"+n+"}}","g");r=r.replace(a,t[n])}),r=r.replace(/{{(.*?)}}/g,""),r};function
+    dt(e,t,r){ct=r,e[t]||(e[t]={}),e[t].api||(e[t].api={}),e[t].api.translate=gt,e[t].api_v1||(e[t].api_v1={}),e[t].api_v1.translate=gt}let
+    x={unreadMessageCount:0,triggeredRemindersCount:0,navigation:{history:[{pagePath:"main"}]},page:{pageState:{},pageParameters:{}}};function
+    gi(e,t,r){e[t]||(e[t]={}),e[t].state||(e[t].state={}),e[t].state.unreadMessageCount||(e[t].state.unreadMessageCount=x.unreadMessageCount),e[t].state.triggeredRemindersCount||(e[t].state.unreadMessageCount=x.triggeredRemindersCount),e[t].state.navigation||(e[t].state.navigation={}),e[t].state.navigation.history||(e[t].state.navigation.history=x.navigation.history),e[t].state.page||(e[t].state.page={}),e[t].state.page.pageState||(e[t].state.page.pageState=x.page.pageState),e[t].state.page.pageParameters||(e[t].state.page.pageParameters=x.page.pageParameters)}const
+    di={container:"_container_10quy_2",title:"_title_10quy_6",body:"_body_10quy_11",button:"_button_10quy_15"},fi=(e,t)=>{const
+    r=e.__vccOpts||e;for(const[n,a]of t)r[n]=a;return
+    r},K=window.Vue.normalizeClass,N=window.Vue.createElementVNode,pi=window.Vue.toDisplayString,_i=window.Vue.vModelText,yi=window.Vue.withDirectives,mi=window.Vue.withModifiers,hi=window.Vue.openBlock,bi=window.Vue.createElementBlock,wi=N("label",{for:"page-state-input"},"Please
+    write to page
+    state",-1),ft=window.Vue.ref,pt=fi({__name:"Main",props:{app:Object,writeDataPath:String,deleteDataPath:String},setup(e){const
+    t=e,r=ft(""),n=ft(t.app?.state.page.pageState),a=i=>{let
+    d=i;isNaN(Number(i))||(d=Number(i)),n.value=t.app?.api_v1.page.setPageStateProperty(t.writeDataPath,d)},o=()=>{r.value="",n.value=t.app?.api_v1.page.deletePageStateProperty(t.deleteDataPath)};return
+    console.log("=== configurable-page-state component debug:start
+    ==="),console.log(`ⓘ path to write data to page state:
+    ${t.writeDataPath}`),console.log(`ⓘ path to delete data in page state:
+    ${t.deleteDataPath}`),console.log("=== configurable-page-state component
+    debug:end
+    ==="),(i,d)=>(hi(),bi("div",{class:K(i.$style.container)},[N("h1",{class:K(i.$style.title)},"
+    Configurable page state ",2),N("p",null," Page state:
+    "+pi(n.value),1),N("div",{class:K(i.$style.body)},[wi,yi(N("input",{id:"page-state-input",type:"text","onUpdate:modelValue":d[0]||(d[0]=p=>r.value=p),onInput:d[1]||(d[1]=p=>a(p.target.value))},null,544),[[_i,r.value]])],2),N("button",{class:K(i.$style.button),onClick:mi(o,["stop"])},"
+    Delete ",2)],2))}},[["__cssModules",{$style:di}]]);function vi(e,t){const
+    r=e.map(n=>t.wellmoActions?t.wellmoActions.find(a=>a.selector===n.getAttribute("action-name")):{selector:n.getAttribute("action-name"),actions:[{action:"open-page"}]});t.wellmoActions=r}function
+    ji(e,t){if(!e)return;const r=Ti(e);vi(r,t),$i(r,t)}function Ti(e){return
+    e.flatMap(r=>[...r.$el.getElementsByTagName("w-action-v1"),...r.$el.tagName==="W-ACTION-V1"?[r.$el]:[]])}function
+    $i(e,t){!e||e.length<1||e.forEach(r=>{r.app=t.app,r.wellmoActions=t.wellmoActions})}const
+    Ai=window.Vue.defineComponent,Pi=window.Vue.h,Oi=window.Vue.createApp,Si=window.Vue.ref;function
+    _t(e,t){const
+    r=Si(e);if(t.__vue_app__)Object.assign(t.__vue_app__._props,r.value);else{const
+    n=Ai({setup(){return{Main:pt}},mounted(){ji(this.$children,r.value)},render(){return
+    Pi(pt,{...r.value})}}),a=Oi(n,r.value);a.mount(t),t.__vue_app__=a}}const
+    Ei=/^[a-zA-Z
+    ',.&\u00A1-\uFFFF-]*$/,Ii=/^[\u0020-\u0029\u002B-\u002E\u0030-\u003B\u003D\u003F-\u005B\u005D-\u005F\u0061-\u007B\u007D-\u007E\u00A1-\uFFEF]*$/,Ci=["en","fi","sv","nl","de","pl","nb"],Mi=["AE","AT","AU","BE","CA","CH","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HU","IE","IS","IT","LT","LU","LV","NL","NO","NZ","PE","PL","PT","RU","SE","SK","TR","US","ZA"],Di=["f","m"],ki=["METRIC","IMPERIAL"],Ni=["CALORIE","JOULE"],Li=["MMOL_PER_L","MG_PER_DL"];let
+    f={};const
+    yt=e=>e&&!Fi(e)&&e.match(Ei)&&e.length<=50,Fi=e=>!e.match(Ii)||e.indexOf("..")>-1,Ri=e=>Ci.includes(e),Bi=e=>Mi.includes(e),Ui=e=>Di.includes(e),xi=e=>ki.includes(e),Vi=e=>Ni.includes(e),Gi=e=>Li.includes(e),zi=e=>typeof
+    e=="number"&&e>0,Wi=e=>{let t=new Date;return
+    e&&Object.prototype.toString.call(e)==="[object
+    Date]"&&!isNaN(e)&&e<=t.setFullYear(t.getFullYear()-14)},y=Promise.resolve({textStatus:"success"}),Hi={setFirstName(e){return
+    yt(e)?(f.firstName=e,y):Promise.reject({error:"Invalid first
+    name"})},setLastName(e){return
+    yt(e)?(f.lastName=e,y):Promise.reject({error:"Invalid last
+    name"})},setGender(e){return
+    Ui(e)?(f.gender=e,y):Promise.reject({error:"Invalid
+    gender"})},setDateOfBirth(e){return
+    Wi(e)?(f.dateOfBirth=e,y):Promise.reject({error:"Invalid date of
+    birth"})},setHeight(e){return
+    zi(e)?(f.height=e,y):Promise.reject({error:"Invalid
+    height"})},setUnitSystem(e){return
+    xi(e)?(e!==f.unitSystem&&(e==="METRIC"&&(f.weight=Math.round(f.weight/2.20462*1e3)/1e3,f.height=Math.round(f.height*2.54*1e3)/1e3),e==="IMPERIAL"&&(f.weight=Math.round(f.weight*2.20462*1e3)/1e3,f.height=Math.round(f.height/2.54*1e3)/1e3)),f.unitSystem=e,y):Promise.reject({error:"Invalid
+    unit system"})},setEnergyUnit(e){return
+    Vi(e)?(f.energyUnit=e,y):Promise.reject({error:"Invalid energy
+    unit"})},setBloodGlucoseUnit(e){return
+    Gi(e)?(f.bloodGlucoseUnit=e,y):Promise.reject({error:"Invalid blood glucose
+    unit"})},setLanguage(e){return
+    Ri(e)?(f.language=e,y):Promise.reject({error:"Invalid
+    language"})},setCountry(e){return
+    Bi(e)?(f.country=e,y):Promise.reject({error:"Invalid country"})}};function
+    qi(e,t,r){f={},e[t]||(e[t]={}),e[t].data||(e[t].data={}),e[t].api_v1||(e[t].api_v1={}),e[t].api_v1.account=Hi,e[t].data.account=f}let
+    m={};const
+    mt=e=>{m={...m,...e},_t(m,element)};window.PREVIEW_WELLMO_COMPONENT={updateProps:mt},context&&mt(context),ni(m,"data",void
+    0),ci(m,"wellmo"),qi(m,"wellmo"),dt(m,"wellmo",void 0),dt(m,"app",void
+    0),gi(m,"app"),_t(m,element)})();
+  cssTemplate: ''
+  configSchema:
+    type: object
+    properties:
+      writeDataPath:
+        title: Path to write data to page state
+        type: string
+      deleteDataPath:
+        title: Path to delete data in page state
+        type: string
+  formDefinition:
+    - writeDataPath
+    - deleteDataPath
+  defaultConfig:
+    writeDataPath: ''
+    deleteDataPath: ''
+  previewCssTemplate: ''
+  js: >
+    (function(){"use strict";try{if(typeof document<"u"){var
+    e=document.createElement("style");e.appendChild(document.createTextNode("._container_10quy_2{padding:1rem}._title_10quy_6{margin-top:0;font-size:1.5rem}._body_10quy_11{margin-bottom:1rem}._button_10quy_15,._button_10quy_15:hover,._button_10quy_15:focus,._button_10quy_15:visited,._button_10quy_15:active{padding:.6rem
+    1rem;border-radius:4px;background-color:#3273dc;border:none;color:#fff;font-size:1rem;cursor:pointer;outline:0}")),document.head.appendChild(e)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
+
+    (function(a){"use strict";const
+    u={container:"_container_10quy_2",title:"_title_10quy_6",body:"_body_10quy_11",button:"_button_10quy_15"},g=(o,t)=>{const
+    e=o.__vccOpts||o;for(const[n,s]of t)e[n]=s;return
+    e},d=a.createElementVNode("label",{for:"page-state-input"},"Please write to
+    page
+    state",-1),c=g({__name:"Main",props:{app:Object,writeDataPath:String,deleteDataPath:String},setup(o){const
+    t=o,e=a.ref(""),n=a.ref(t.app?.state.page.pageState),s=l=>{let
+    i=l;isNaN(Number(l))||(i=Number(l)),n.value=t.app?.api_v1.page.setPageStateProperty(t.writeDataPath,i)},P=()=>{e.value="",n.value=t.app?.api_v1.page.deletePageStateProperty(t.deleteDataPath)};return
+    console.log("=== configurable-page-state component debug:start
+    ==="),console.log(`ⓘ path to write data to page state:
+    ${t.writeDataPath}`),console.log(`ⓘ path to delete data in page state:
+    ${t.deleteDataPath}`),console.log("=== configurable-page-state component
+    debug:end
+    ==="),(l,i)=>(a.openBlock(),a.createElementBlock("div",{class:a.normalizeClass(l.$style.container)},[a.createElementVNode("h1",{class:a.normalizeClass(l.$style.title)},"
+    Configurable page state ",2),a.createElementVNode("p",null," Page state:
+    "+a.toDisplayString(n.value),1),a.createElementVNode("div",{class:a.normalizeClass(l.$style.body)},[d,a.withDirectives(a.createElementVNode("input",{id:"page-state-input",type:"text","onUpdate:modelValue":i[0]||(i[0]=r=>e.value=r),onInput:i[1]||(i[1]=r=>s(r.target.value))},null,544),[[a.vModelText,e.value]])],2),a.createElementVNode("button",{class:a.normalizeClass(l.$style.button),onClick:a.withModifiers(P,["stop"])},"
+    Delete ",2)],2))}},[["__cssModules",{$style:u}]]);function _(o,t){const
+    e=o.map(n=>t.wellmoActions?t.wellmoActions.find(s=>s.selector===n.getAttribute("action-name")):{selector:n.getAttribute("action-name"),actions:[{action:"open-page"}]});t.wellmoActions=e}function
+    m(o,t){if(!o)return;const e=f(o);_(e,t),b(e,t)}function f(o){return
+    o.flatMap(e=>[...e.$el.getElementsByTagName("w-action-v1"),...e.$el.tagName==="W-ACTION-V1"?[e.$el]:[]])}function
+    b(o,t){!o||o.length<1||o.forEach(e=>{e.app=t.app,e.wellmoActions=t.wellmoActions})}function
+    p(o,t){const
+    e=a.ref(o);if(t.__vue_app__)Object.assign(t.__vue_app__._props,e.value);else{const
+    n=a.defineComponent({setup(){return{Main:c}},mounted(){m(this.$children,e.value)},render(){return
+    a.h(c,{...e.value})}}),s=a.createApp(n,e.value);s.mount(t),t.__vue_app__=s}}let
+    y=context||{};const
+    A=o=>{p(o,element)};window.UPDATE_PROPS=A,p(y,element)})(Vue);
+  jsInit: ''
+  buildId: 20240815_235058-22bd875
+  previewImage: ''
+  events: []
+  jsRequires:
+    Vue: vue-3.4
+  name: <%- componentName %>
+  description: <%- componentDescription %>
+groupId: sp
+title: <%- componentName %>
