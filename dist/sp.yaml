@@ -398,6 +398,6 @@ settings:
   jsRequires:
     Vue: vue-3.4
   name: <%- componentName %>
-  description: <%- componentDescription %>
+  description: <%- componentDescription Change %>
 groupId: sp
 title: <%- componentName %>
