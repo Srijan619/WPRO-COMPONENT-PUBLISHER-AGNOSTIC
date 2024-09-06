@@ -6,7 +6,7 @@ const fs = require("fs");
 const API_URL = "http://localhost.localdomain:8080";
 const DEFAULT_ORG = process.env.WPRO_ORG;
 const ORGS_TOKEN_PAIR = {
-  DEFAULT_ORG: process.env.WPRO_TOKEN,
+  [DEFAULT_ORG]: process.env.WPRO_TOKEN,
 };
 
 const PROTOTYPE_RESOURCE =
