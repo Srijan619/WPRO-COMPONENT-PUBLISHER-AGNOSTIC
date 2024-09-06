@@ -4,9 +4,9 @@ const fs = require("fs");
 
 // Hardcoded configuration values
 const API_URL = "http://localhost.localdomain:8080";
-const DEFAULT_ORG = "proto";
+const DEFAULT_ORG = process.env.WPRO_ORG;
 const ORGS_TOKEN_PAIR = {
-  [process.env.WPRO_ORG]: process.env.WPRO_TOKEN,
+  DEFAULT_ORG: process.env.WPRO_TOKEN,
 };
 
 const PROTOTYPE_RESOURCE =
@@ -118,9 +118,7 @@ async function publishFullService() {
 }
 
 // Run the script
-handleComponentUpload().catch((error) =>{
+handleComponentUpload().catch((error) => {
   console.error("Error during component upload:", error);
   throw Error();
-
-}
-);
+});
