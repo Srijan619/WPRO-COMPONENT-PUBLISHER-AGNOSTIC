@@ -118,6 +118,9 @@ async function publishFullService() {
 }
 
 // Run the script
-handleComponentUpload().catch((error) =>
-  console.error("Error during component upload:", error),
+handleComponentUpload().catch((error) =>{
+  console.error("Error during component upload:", error);
+  throw Error();
+
+}
 );
