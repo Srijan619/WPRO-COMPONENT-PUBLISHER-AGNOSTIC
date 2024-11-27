@@ -29,6 +29,20 @@ if (!fileLocation) {
   process.exit(1);
 }
 
+// Helper function to map status codes to error messages
+function getErrorMessage(status) {
+  const messages = {
+    400: "Bad Request - The server could not process the request.",
+    401: "Unauthorized - Please check your authentication token.",
+    403: "Forbidden - You do not have permission to perform this action.",
+    404: "Not Found - The endpoint or resource does not exist.",
+    500: "Internal Server Error - Please try again later.",
+    503: "Service Unavailable - The server is currently unable to handle the request.",
+  };
+  return messages[status] || "An unknown error occurred.";
+}
+
+
 async function handleComponentUpload() {
   if (!PROTOTYPE_RESOURCE) {
     console.error(
@@ -79,13 +93,18 @@ async function uploadComponent(url, dataToPush) {
       console.log("Component successfully published with POST!");
     }
   } catch (error) {
+    if (error.response) {
+      const { status } = error.response;
+      console.error(`POST failed with status ${status}: ${getErrorMessage(status)}`);
+    } else {
+      console.error("POST failed: No response from server", error.message);
+    }
+
     try {
-      console.log(
-        "Posting component failed :( but no worries trying PUT now :)",
-      );
+      console.log("Attempting to publish component with PUT...");
 
       const res = await axios.put(
-        url + dataToPush.groupId,
+        `${url}${dataToPush.groupId}`,
         dataToPush,
         bearerAuthConfig,
       );
@@ -93,7 +112,12 @@ async function uploadComponent(url, dataToPush) {
         console.log("Component successfully published with PUT!");
       }
     } catch (error) {
-      console.error("Component publish failed completely :(");
+      if (error.response) {
+        const { status } = error.response;
+        console.error(`PUT failed with status ${status}: ${getErrorMessage(status)}`);
+      } else {
+        console.error("PUT failed: No response from server", error.message);
+      }
     }
   }
 }
