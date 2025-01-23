@@ -1,26 +1,32 @@
 #!/bin/bash
 
-## Niche utility script to run/serve components from anywhere in the terminal.....
 # Base directory where components are stored
 BASE_DIR="$HOME/workspace/components"
 
 # Function to display usage information
 usage() {
-  echo "Usage: servecomp <component-name> [port] [use-cwd]"
+  echo "Usage: servecomp  [use-cwd] <component-name> [port]"
+  echo "  [use-cwd]        - Optional flag to use the current working directory (1 for yes, 0 for no). Default is 0 (use BASE_DIR)."
   echo "  <component-name>  - The name of the component to serve."
   echo "  [port]           - Optional custom port (default is 3333)."
-  echo "  [use-cwd]        - Optional flag to use the current working directory (1 for yes, 0 for no). Default is 0 (use BASE_DIR)."
   exit 1
 }
 
-# Check if a component name was provided
-if [[ -z "$2" ]]; then
-  usage
+# Parse arguments
+USE_CWD=0 # Default to using BASE_DIR
+if [[ "$1" =~ ^[01]$ ]]; then
+  USE_CWD="$1"
+  COMPONENT_NAME="$2"
+  PORT="${3:-3333}" # Default port is 3333
+else
+  COMPONENT_NAME="$1"
+  PORT="${2:-3333}" # Default port is 3333
 fi
 
-USE_CWD="${1:-0}" # Default to using BASE_DIR if not provided
-COMPONENT_NAME="$2"
-PORT="${3:-3333}" # Default port is 3333 if not provided
+# Validate component name
+if [[ -z "$COMPONENT_NAME" ]]; then
+  usage
+fi
 
 # Determine the component directory
 if [[ "$USE_CWD" == "1" ]]; then
